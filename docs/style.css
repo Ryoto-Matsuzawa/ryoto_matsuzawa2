@@ -1,4 +1,4 @@
-.animationTarget {
+.animationTarget, .scrollTarget {
   opacity: 0;
   -webkit-transform: translateY(20px);
           transform: translateY(20px);
@@ -12,9 +12,15 @@
           transform: none;
 }
 
+.scrollTarget.show {
+  opacity: 1;
+  -webkit-transform: none;
+          transform: none;
+}
+
 @media (max-width: 767px) {
   html {
-    background-image: url(img/img3.jpg);
+    background-image: url(img/img1.jpg);
     background-attachment: fixed;
     background-size: cover;
     color: #fff;
@@ -25,6 +31,7 @@
   }
   html header {
     height: 100vh;
+    background-color: transparent;
     position: relative;
   }
   html header .headerText {
@@ -48,7 +55,7 @@
   html .section2 {
     position: relative;
     height: 25vh;
-    background-color: rgba(51, 51, 51, 0);
+    background-color: transparent;
   }
   html .section2 .contentsText {
     background-color: rgba(20, 20, 20, 0.6);
@@ -103,7 +110,7 @@
   html .section4 {
     position: relative;
     height: 25vh;
-    background-color: rgba(51, 51, 51, 0);
+    background-color: transparent;
   }
   html .section4 .contentsText {
     margin-right: 5%;
@@ -163,7 +170,7 @@
 
 @media (min-width: 768px) and (max-width: 995px) {
   html {
-    background-image: url(img/img3.jpg);
+    background-image: url(img/img1.jpg);
     background-attachment: fixed;
     background-size: cover;
     color: #fff;
@@ -197,7 +204,7 @@
   html .section2 {
     position: relative;
     height: 25vh;
-    background-color: rgba(51, 51, 51, 0);
+    background-color: transparent;
   }
   html .section2 .contentsText {
     background-color: rgba(20, 20, 20, 0.6);
@@ -252,7 +259,7 @@
   html .section4 {
     position: relative;
     height: 25vh;
-    background-color: rgba(51, 51, 51, 0);
+    background-color: transparent;
   }
   html .section4 .contentsText {
     margin-right: 5%;
@@ -312,7 +319,7 @@
 
 @media (min-width: 996px) {
   html {
-    background-image: url(img/img3.jpg);
+    background-image: url(img/img1.jpg);
     background-attachment: fixed;
     background-size: cover;
     color: #fff;
@@ -346,7 +353,7 @@
   html .section2 {
     position: relative;
     height: 25vh;
-    background-color: rgba(51, 51, 51, 0);
+    background-color: transparent;
   }
   html .section2 .contentsText {
     background-color: rgba(20, 20, 20, 0.6);
@@ -401,7 +408,7 @@
   html .section4 {
     position: relative;
     height: 25vh;
-    background-color: rgba(51, 51, 51, 0);
+    background-color: transparent;
   }
   html .section4 .contentsText {
     margin-right: 5%;

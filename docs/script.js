@@ -1,4 +1,13 @@
 // $('.fas').hide() //メニュー、ページスクロールを一旦隠してる
+
+//index.htmlのheader文章、ロードしたら表示するように指定
+const scrollElement = document.querySelector('#section1') //headerの文字を定義
+window.addEventListener('load', ()=>{                     //ロードしたら下記実行
+  scrollElement.classList.add('show')                     //section1に対してshowクラスを付与
+  
+})
+
+//index.htmlのセクションごとの演出
 const targetElement = document.querySelectorAll(".animationTarget") //htmlのanimationTagetを定義
 document.addEventListener('scroll', ()=>{                           //スクロールしたとき、下記実行。
   for (let i = 0; i < targetElement.length; i++) {                  //targetEement（5つ）文下記処理を実行する。

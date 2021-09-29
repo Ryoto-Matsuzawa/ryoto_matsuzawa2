@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 // JS
-.animationTarget{
+.animationTarget, .scrollTarget{
   opacity: 0;
   transform: translateY(20px);
   transition: 1s;
@@ -10,12 +10,16 @@
   opacity: 1;
   transform: none;
 }
+.scrollTarget.show{
+  opacity: 1;
+  transform: none;
+}
 //モバイルデザイン
 @media (max-width: 767px){
   html {
     // background-image: url(https://picsum.photos/500/300);
     // background-attachment: fixed;
-    background-image: url(img/img3.jpg);
+    background-image: url(img/img1.jpg);
     background-attachment: fixed;
     background-size: cover;
     color: #fff;
@@ -26,7 +30,7 @@
 
     header {
       height: 100vh;
-      
+      background-color: transparent;
       position: relative;
       .headerText{
         position: absolute;
@@ -50,7 +54,7 @@
     .section2 {
       position: relative;
       height: 25vh;
-      background-color: rgba(51, 51, 51,0);
+      background-color: transparent;
       .contentsText{
         background-color: rgba(20,20,20,.6);
         padding: 5px 5px;
@@ -97,7 +101,7 @@
     .section4 {
       position: relative;
       height: 25vh;
-      background-color: rgba(51, 51, 51,0);
+      background-color: transparent;
       .contentsText{
         margin-right: 5%;
         background-color: rgba(20,20,20,.6);
@@ -149,9 +153,7 @@
 //タブレットデザイン
 @media (min-width: 768px)and(max-width: 995px){
   html{
-    // background-image: url(https://picsum.photos/500/300);
-    // background-attachment: fixed;
-    background-image: url(img/img3.jpg);
+    background-image: url(img/img1.jpg);
     background-attachment: fixed;
     background-size: cover;
     color: #fff;
@@ -186,7 +188,7 @@
     .section2{
       position: relative;
       height: 25vh;
-      background-color: rgba(51, 51, 51,0);
+      background-color: transparent;
       .contentsText{
         background-color: rgba(20,20,20,.6);
         padding: 5px 5px;
@@ -233,7 +235,7 @@
     .section4{
       position: relative;
       height: 25vh;
-      background-color: rgba(51, 51, 51,0);
+      background-color: transparent;
       .contentsText{
         margin-right: 5%;
         background-color: rgba(20,20,20,.6);
@@ -285,9 +287,7 @@
 //PCデザイン
 @media (min-width: 996px){
   html{
-    // background-image: url(https://picsum.photos/500/300);
-    // background-attachment: fixed;
-    background-image: url(img/img3.jpg);
+    background-image: url(img/img1.jpg);
     background-attachment: fixed;
     background-size: cover;
     color: #fff;
@@ -322,7 +322,7 @@
     .section2{
       position: relative;
       height: 25vh;
-      background-color: rgba(51, 51, 51,0);
+      background-color: transparent;
       .contentsText{
         background-color: rgba(20,20,20,.6);
         padding: 5px 5px;
@@ -369,7 +369,7 @@
     .section4{
       position: relative;
       height: 25vh;
-      background-color: rgba(51, 51, 51,0);
+      background-color: transparent;
       .contentsText{
         margin-right: 5%;
         background-color: rgba(20,20,20,.6);
