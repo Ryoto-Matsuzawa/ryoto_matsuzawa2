@@ -20,21 +20,23 @@
 
 @media (max-width: 767px) {
   html {
-    background-image: url(img/img1.jpg);
-    background-attachment: fixed;
-    background-size: cover;
     color: #fff;
   }
   html .fas {
     font-size: 30px;
     display: none;
   }
-  html header {
+  html body {
+    background-image: url(img/img1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  html body header {
     height: 100vh;
     background-color: transparent;
     position: relative;
   }
-  html header .headerText {
+  html body header .headerText {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -44,20 +46,20 @@
     font-size: calc(16px + 2vh);
     line-height: 2;
   }
-  html header .headerText .headerPtop {
+  html body header .headerText .headerPtop {
     white-space: nowrap;
     margin-left: -30%;
   }
-  html header .headerText .headerPBottom {
+  html body header .headerText .headerPBottom {
     white-space: nowrap;
     margin-left: 30%;
   }
-  html .section2 {
+  html body .section2 {
     position: relative;
     height: 25vh;
     background-color: transparent;
   }
-  html .section2 .contentsText {
+  html body .section2 .contentsText {
     background-color: rgba(20, 20, 20, 0.6);
     padding: 5px 5px;
     margin-left: 5%;
@@ -77,7 +79,7 @@
     -webkit-transform: translate(0%, -50%);
             transform: translate(0%, -50%);
   }
-  html .section2 .image {
+  html body .section2 .image {
     right: 0;
     position: absolute;
     top: 0;
@@ -85,7 +87,7 @@
     overflow: hidden;
     height: 25vh;
   }
-  html .section2 .image img {
+  html body .section2 .image img {
     position: absolute;
     top: 0;
     left: 0;
@@ -94,11 +96,11 @@
     -o-object-fit: cover;
        object-fit: cover;
   }
-  html .section3 {
+  html body .section3 {
     height: 100vh;
     position: relative;
   }
-  html .section3 p {
+  html body .section3 p {
     position: absolute;
     font-size: calc(16px + 1vh);
     top: 50%;
@@ -107,12 +109,12 @@
             transform: translate(-50%, -50%);
     white-space: nowrap;
   }
-  html .section4 {
+  html body .section4 {
     position: relative;
     height: 25vh;
     background-color: transparent;
   }
-  html .section4 .contentsText {
+  html body .section4 .contentsText {
     margin-right: 5%;
     background-color: rgba(20, 20, 20, 0.6);
     padding: 5px 5px;
@@ -133,7 +135,7 @@
     -webkit-transform: translate(0%, -50%);
             transform: translate(0%, -50%);
   }
-  html .section4 .image {
+  html body .section4 .image {
     left: 0;
     position: absolute;
     top: 0;
@@ -141,7 +143,7 @@
     overflow: hidden;
     height: 25vh;
   }
-  html .section4 .image img {
+  html body .section4 .image img {
     position: absolute;
     top: 0;
     left: 0;
@@ -150,11 +152,11 @@
     -o-object-fit: cover;
        object-fit: cover;
   }
-  html .section5 {
+  html body .section5 {
     height: 100vh;
     position: relative;
   }
-  html .section5 .footerP {
+  html body .section5 .footerP {
     height: 58vh;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -173,7 +175,7 @@
     font-size: calc(16px + 1vh);
     line-height: 4;
   }
-  html .section5 .footerLeftImages {
+  html body .section5 .footerLeftImages {
     margin-top: 1vh;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -186,18 +188,18 @@
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
-  html .section5 .footerLeftImages .card {
+  html body .section5 .footerLeftImages .card {
     width: 30vw;
     height: 20vh;
     position: relative;
   }
-  html .section5 .footerLeftImages .card a img {
+  html body .section5 .footerLeftImages .card a img {
     -o-object-fit: cover;
        object-fit: cover;
     width: 100%;
     height: 100%;
   }
-  html .section5 .footerLeftImages .card a p {
+  html body .section5 .footerLeftImages .card a p {
     width: 100%;
     position: absolute;
     z-index: 100;
@@ -210,7 +212,7 @@
     background-color: rgba(255, 255, 255, 0.8);
     color: violet;
   }
-  html .section5 .footerRightImages {
+  html body .section5 .footerRightImages {
     margin-bottom: 1vh;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -223,18 +225,18 @@
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
-  html .section5 .footerRightImages .card {
+  html body .section5 .footerRightImages .card {
     width: 30vw;
     height: 20vh;
     position: relative;
   }
-  html .section5 .footerRightImages .card a img {
+  html body .section5 .footerRightImages .card a img {
     -o-object-fit: cover;
        object-fit: cover;
     width: 100%;
     height: 100%;
   }
-  html .section5 .footerRightImages .card a p {
+  html body .section5 .footerRightImages .card a p {
     width: 100%;
     position: absolute;
     z-index: 100;
