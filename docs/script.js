@@ -4,7 +4,6 @@
 const scrollElement = document.querySelector('#section1') //headerの文字を定義
 window.addEventListener('load', ()=>{                     //ロードしたら下記実行
   scrollElement.classList.add('show')                     //section1に対してshowクラスを付与
-  
 })
 
 //index.htmlのセクションごとの演出
