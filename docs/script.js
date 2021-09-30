@@ -1,4 +1,21 @@
 // $('.fas').hide() //メニュー、ページスクロールを一旦隠してる
+//ファーストビュー100vh対策　DOMの読み込みが完了したらsetOuterHeightが発火
+document.addEventListener('DOMContentLoaded', setOuterHeight)
+
+// スマホならtrue, PCならfalse
+const isSP = /iPhone|iPod|iPad|Android/i.test(navigator.userAgent)
+
+// 端末の種類をもとにCSS変数を定義
+const setOuterHeight = () =>{
+  // 端末がスマホなら
+  if(isSP){
+    // CSS変数 --outer-height に outerHeight px を代入
+    document.documentElement.style.setProperty(
+      '--outer-height',
+      `${window.outerHeight}px`
+    )
+  }
+}
 
 //index.htmlのheader文章、ロードしたら表示するように指定
 const scrollElement = document.querySelector('#section1') //headerの文字を定義
@@ -6,7 +23,6 @@ window.addEventListener('load', ()=>{                     //ロードしたら�
   scrollElement.classList.add('show')                     //section1に対してshowクラスを付与
   
 })
-
 
 //index.htmlのセクションごとの演出
 const targetElement = document.querySelectorAll(".animationTarget") //htmlのanimationTagetを定義

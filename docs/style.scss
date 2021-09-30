@@ -14,24 +14,23 @@
   opacity: 1;
   transform: none;
 }
+:root{
+  --outer-height: 100vh;
+}
 //モバイルデザイン
 @media (max-width: 767px){
   html {
-    height: 100%;
-    overflow: hidden;
     color: #fff;
     .fas {
       font-size: 30px;
       display: none;
     }
     body{
-      height: 100%;
-      overflow: hidden;
       background-image: url(img/img1.jpg);
       background-attachment: fixed;
       background-size: cover;
       header {
-        height: 100vh;
+        height: var(--outer-height);
         background-color: transparent;
         position: relative;
         .headerText{
@@ -55,7 +54,7 @@
   
       .section2 {
         position: relative;
-        height: 25vh;
+        height: calc(var(--outer-height) * 0.25);
         background-color: transparent;
         .contentsText{
           background-color: rgba(20,20,20,.6);
@@ -88,7 +87,7 @@
       }
   
       .section3 {
-        height: 100vh;
+        height: var(--outer-height);
         position: relative;
         p{
           position: absolute;
@@ -102,7 +101,7 @@
   
       .section4 {
         position: relative;
-        height: 25vh;
+        height: calc(var(--outer-height) * 0.25);
         background-color: transparent;
         .contentsText{
           margin-right: 5%;
@@ -136,7 +135,7 @@
       }
   
       .section5 {
-        height: 100vh;
+        height: var(--outer-height);
         position: relative;
         .footerP{
           height: 58vh;

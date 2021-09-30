@@ -18,10 +18,12 @@
           transform: none;
 }
 
+:root {
+  --outer-height: 100vh;
+}
+
 @media (max-width: 767px) {
   html {
-    height: 100%;
-    overflow: hidden;
     color: #fff;
   }
   html .fas {
@@ -29,14 +31,12 @@
     display: none;
   }
   html body {
-    height: 100%;
-    overflow: hidden;
     background-image: url(img/img1.jpg);
     background-attachment: fixed;
     background-size: cover;
   }
   html body header {
-    height: 100vh;
+    height: var(--outer-height);
     background-color: transparent;
     position: relative;
   }
@@ -60,7 +60,7 @@
   }
   html body .section2 {
     position: relative;
-    height: 25vh;
+    height: calc(var(--outer-height) * 0.25);
     background-color: transparent;
   }
   html body .section2 .contentsText {
@@ -101,7 +101,7 @@
        object-fit: cover;
   }
   html body .section3 {
-    height: 100vh;
+    height: var(--outer-height);
     position: relative;
   }
   html body .section3 p {
@@ -115,7 +115,7 @@
   }
   html body .section4 {
     position: relative;
-    height: 25vh;
+    height: calc(var(--outer-height) * 0.25);
     background-color: transparent;
   }
   html body .section4 .contentsText {
@@ -157,7 +157,7 @@
        object-fit: cover;
   }
   html body .section5 {
-    height: 100vh;
+    height: var(--outer-height);
     position: relative;
   }
   html body .section5 .footerP {
