@@ -7,6 +7,15 @@ window.addEventListener('load', ()=>{                     //ロードしたら�
   
 })
 
+$(document).ready(function(){
+  var hSize = $(window).height();
+  $('.mainvisual').height(hSize); // アドレスバーを除いたサイズを付与
+  });
+  $(window).resize(function(){ // ページをリサイズした時の処理
+  var hSize = $(window).height();
+  $('.mainvisual').height(hSize); // アドレスバーを除いたサイズを付与
+  });
+
 //index.htmlのセクションごとの演出
 const targetElement = document.querySelectorAll(".animationTarget") //htmlのanimationTagetを定義
 document.addEventListener('scroll', ()=>{                           //スクロールしたとき、下記実行。
