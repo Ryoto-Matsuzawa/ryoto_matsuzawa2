@@ -14,9 +14,6 @@
   opacity: 1;
   transform: none;
 }
-:root{
-  --outer-height: 100vh;
-}
 //モバイルデザイン
 @media (max-width: 767px){
   html {
@@ -30,7 +27,7 @@
       background-attachment: fixed;
       background-size: cover;
       header {
-        height: var(--outer-height);
+        height: 100vh;
         background-color: transparent;
         position: relative;
         .headerText{
@@ -54,7 +51,7 @@
   
       .section2 {
         position: relative;
-        height: calc(var(--outer-height) * 0.25);
+        height: 25vh;
         background-color: transparent;
         .contentsText{
           background-color: rgba(20,20,20,.6);
@@ -87,7 +84,7 @@
       }
   
       .section3 {
-        height: var(--outer-height);
+        height: 100vh;
         position: relative;
         p{
           position: absolute;
@@ -101,7 +98,7 @@
   
       .section4 {
         position: relative;
-        height: calc(var(--outer-height) * 0.25);
+        height: 25vh;
         background-color: transparent;
         .contentsText{
           margin-right: 5%;
@@ -135,7 +132,7 @@
       }
   
       .section5 {
-        height: var(--outer-height);
+        height: 100vh;
         position: relative;
         .footerP{
           height: 58vh;

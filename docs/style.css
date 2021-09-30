@@ -18,10 +18,6 @@
           transform: none;
 }
 
-:root {
-  --outer-height: 100vh;
-}
-
 @media (max-width: 767px) {
   html {
     color: #fff;
@@ -36,7 +32,7 @@
     background-size: cover;
   }
   html body header {
-    height: var(--outer-height);
+    height: 100vh;
     background-color: transparent;
     position: relative;
   }
@@ -60,7 +56,7 @@
   }
   html body .section2 {
     position: relative;
-    height: calc(var(--outer-height) * 0.25);
+    height: 25vh;
     background-color: transparent;
   }
   html body .section2 .contentsText {
@@ -101,7 +97,7 @@
        object-fit: cover;
   }
   html body .section3 {
-    height: var(--outer-height);
+    height: 100vh;
     position: relative;
   }
   html body .section3 p {
@@ -115,7 +111,7 @@
   }
   html body .section4 {
     position: relative;
-    height: calc(var(--outer-height) * 0.25);
+    height: 25vh;
     background-color: transparent;
   }
   html body .section4 .contentsText {
@@ -157,7 +153,7 @@
        object-fit: cover;
   }
   html body .section5 {
-    height: var(--outer-height);
+    height: 100vh;
     position: relative;
   }
   html body .section5 .footerP {
