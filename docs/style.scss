@@ -22,6 +22,10 @@
       font-size: 30px;
       display: none;
     }
+    .mainvisual{
+      height: 100vh;
+      min-height: var(--vh);
+    }
     body{
       background-image: url(img/img1.jpg);
       background-attachment: fixed;

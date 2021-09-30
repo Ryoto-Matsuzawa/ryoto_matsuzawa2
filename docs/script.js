@@ -1,5 +1,8 @@
 // $('.fas').hide() //メニュー、ページスクロールを一旦隠してる
 
+let sp_height = window.outerHeight;
+document.documentElement.style.setProperty("--vh", `${sp_height}px`);
+
 //index.htmlのheader文章、ロードしたら表示するように指定
 const scrollElement = document.querySelector('#section1') //headerの文字を定義
 window.addEventListener('load', ()=>{                     //ロードしたら下記実行
