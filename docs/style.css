@@ -27,7 +27,6 @@
     display: none;
   }
   html .mainvisual {
-    height: 100vh;
     min-height: var(--vh);
   }
   html body {
