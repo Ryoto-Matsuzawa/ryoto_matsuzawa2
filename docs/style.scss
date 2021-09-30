@@ -17,12 +17,16 @@
 //モバイルデザイン
 @media (max-width: 767px){
   html {
+    height: 100%;
+    overflow: hidden;
     color: #fff;
     .fas {
       font-size: 30px;
       display: none;
     }
     body{
+      height: 100%;
+      overflow: hidden;
       background-image: url(img/img1.jpg);
       background-attachment: fixed;
       background-size: cover;
