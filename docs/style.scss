@@ -137,15 +137,77 @@
       height: 100vh;
       position: relative;
       .footerP{
-        text-align: center;
-        white-space: nowrap;
-        position: absolute;
+        height: 58vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         font-weight: bold;
         font-size: calc(16px + 1vh);
         line-height: 4;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+      }
+
+      .footerLeftImages{
+        margin-top: 1vh;
+        display: flex;
+        align-items: center;
+        position: relative;
+        justify-content: space-evenly;
+        .card{
+          width: 30vw;
+          height: 20vh;
+          position: relative;
+          a{
+            img{
+              object-fit: cover;
+              width: 100%;
+              height: 100%;
+            }
+            p{
+              width: 100%;
+              position: absolute;
+              z-index: 100;
+              bottom: 0;
+              left: 50%;
+              transform: translate(-50%);
+              text-align: center;
+              font-size: 16px;
+              background-color: rgba(255, 255, 255, .8);
+              color: violet;
+            }
+          }
+        }
+      }
+      .footerRightImages{
+        margin-bottom: 1vh;
+        display: flex;
+        align-items: center;
+        position: relative;
+        justify-content: space-evenly;
+        .card{
+          width: 30vw;
+          height: 20vh;
+          position: relative;
+          a{
+            img{
+              object-fit: cover;
+              width: 100%;
+              height: 100%;
+            }
+            p{
+              width: 100%;
+              position: absolute;
+              z-index: 100;
+              bottom: 0;
+              left: 50%;
+              transform: translate(-50%);
+              text-align: center;
+              font-size: 16px;
+              background-color: rgba(255, 255, 255, .8);
+              color: violet;
+            }
+          }
+        }
       }
     }
   }
@@ -267,19 +329,81 @@
       }
     }
 
-    .section5{
+    .section5 {
       height: 100vh;
       position: relative;
       .footerP{
-        text-align: center;
-        white-space: nowrap;
-        position: absolute;
+        height: 58vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         font-weight: bold;
         font-size: calc(16px + 1vh);
         line-height: 4;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+      }
+
+      .footerLeftImages{
+        margin-top: 1vh;
+        display: flex;
+        align-items: center;
+        position: relative;
+        justify-content: space-evenly;
+        .card{
+          width: 30vw;
+          height: 20vh;
+          position: relative;
+          a{
+            img{
+              object-fit: cover;
+              width: 100%;
+              height: 100%;
+            }
+            p{
+              width: 100%;
+              position: absolute;
+              z-index: 100;
+              bottom: 0;
+              left: 50%;
+              transform: translate(-50%);
+              text-align: center;
+              font-size: 16px;
+              background-color: rgba(255, 255, 255, .8);
+              color: violet;
+            }
+          }
+        }
+      }
+      .footerRightImages{
+        margin-bottom: 1vh;
+        display: flex;
+        align-items: center;
+        position: relative;
+        justify-content: space-evenly;
+        .card{
+          width: 30vw;
+          height: 20vh;
+          position: relative;
+          a{
+            img{
+              object-fit: cover;
+              width: 100%;
+              height: 100%;
+            }
+            p{
+              width: 100%;
+              position: absolute;
+              z-index: 100;
+              bottom: 0;
+              left: 50%;
+              transform: translate(-50%);
+              text-align: center;
+              font-size: 16px;
+              background-color: rgba(255, 255, 255, .8);
+              color: violet;
+            }
+          }
+        }
       }
     }
   }
@@ -401,19 +525,81 @@
       }
     }
 
-    .section5{
+    .section5 {
       height: 100vh;
       position: relative;
       .footerP{
-        text-align: center;
-        white-space: nowrap;
-        position: absolute;
+        height: 58vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         font-weight: bold;
         font-size: calc(16px + 1vh);
         line-height: 4;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+      }
+
+      .footerLeftImages{
+        margin-top: 1vh;
+        display: flex;
+        align-items: center;
+        position: relative;
+        justify-content: space-evenly;
+        .card{
+          width: 30vw;
+          height: 20vh;
+          position: relative;
+          a{
+            img{
+              object-fit: cover;
+              width: 100%;
+              height: 100%;
+            }
+            p{
+              width: 100%;
+              position: absolute;
+              z-index: 100;
+              bottom: 0;
+              left: 50%;
+              transform: translate(-50%);
+              text-align: center;
+              font-size: 16px;
+              background-color: rgba(255, 255, 255, .8);
+              color: violet;
+            }
+          }
+        }
+      }
+      .footerRightImages{
+        margin-bottom: 1vh;
+        display: flex;
+        align-items: center;
+        position: relative;
+        justify-content: space-evenly;
+        .card{
+          width: 30vw;
+          height: 20vh;
+          position: relative;
+          a{
+            img{
+              object-fit: cover;
+              width: 100%;
+              height: 100%;
+            }
+            p{
+              width: 100%;
+              position: absolute;
+              z-index: 100;
+              bottom: 0;
+              left: 50%;
+              transform: translate(-50%);
+              text-align: center;
+              font-size: 16px;
+              background-color: rgba(255, 255, 255, .8);
+              color: violet;
+            }
+          }
+        }
       }
     }
   }

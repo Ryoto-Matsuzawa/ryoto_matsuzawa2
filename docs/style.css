@@ -155,16 +155,97 @@
     position: relative;
   }
   html .section5 .footerP {
-    text-align: center;
-    white-space: nowrap;
-    position: absolute;
+    height: 58vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     font-weight: bold;
     font-size: calc(16px + 1vh);
     line-height: 4;
-    top: 50%;
+  }
+  html .section5 .footerLeftImages {
+    margin-top: 1vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  html .section5 .footerLeftImages .card {
+    width: 30vw;
+    height: 20vh;
+    position: relative;
+  }
+  html .section5 .footerLeftImages .card a img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  html .section5 .footerLeftImages .card a p {
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+    bottom: 0;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    text-align: center;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: violet;
+  }
+  html .section5 .footerRightImages {
+    margin-bottom: 1vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  html .section5 .footerRightImages .card {
+    width: 30vw;
+    height: 20vh;
+    position: relative;
+  }
+  html .section5 .footerRightImages .card a img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  html .section5 .footerRightImages .card a p {
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    text-align: center;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: violet;
   }
 }
 
@@ -304,16 +385,97 @@
     position: relative;
   }
   html .section5 .footerP {
-    text-align: center;
-    white-space: nowrap;
-    position: absolute;
+    height: 58vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     font-weight: bold;
     font-size: calc(16px + 1vh);
     line-height: 4;
-    top: 50%;
+  }
+  html .section5 .footerLeftImages {
+    margin-top: 1vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  html .section5 .footerLeftImages .card {
+    width: 30vw;
+    height: 20vh;
+    position: relative;
+  }
+  html .section5 .footerLeftImages .card a img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  html .section5 .footerLeftImages .card a p {
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+    bottom: 0;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    text-align: center;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: violet;
+  }
+  html .section5 .footerRightImages {
+    margin-bottom: 1vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  html .section5 .footerRightImages .card {
+    width: 30vw;
+    height: 20vh;
+    position: relative;
+  }
+  html .section5 .footerRightImages .card a img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  html .section5 .footerRightImages .card a p {
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    text-align: center;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: violet;
   }
 }
 
@@ -453,16 +615,97 @@
     position: relative;
   }
   html .section5 .footerP {
-    text-align: center;
-    white-space: nowrap;
-    position: absolute;
+    height: 58vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     font-weight: bold;
     font-size: calc(16px + 1vh);
     line-height: 4;
-    top: 50%;
+  }
+  html .section5 .footerLeftImages {
+    margin-top: 1vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  html .section5 .footerLeftImages .card {
+    width: 30vw;
+    height: 20vh;
+    position: relative;
+  }
+  html .section5 .footerLeftImages .card a img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  html .section5 .footerLeftImages .card a p {
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+    bottom: 0;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    text-align: center;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: violet;
+  }
+  html .section5 .footerRightImages {
+    margin-bottom: 1vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  html .section5 .footerRightImages .card {
+    width: 30vw;
+    height: 20vh;
+    position: relative;
+  }
+  html .section5 .footerRightImages .card a img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  html .section5 .footerRightImages .card a p {
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    text-align: center;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: violet;
   }
 }
 /*# sourceMappingURL=style.css.map */
