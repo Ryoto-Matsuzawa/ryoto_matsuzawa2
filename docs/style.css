@@ -32,7 +32,7 @@
     background-size: cover;
   }
   html body header {
-    height: 100vh;
+    height: clamp(100vh, 100%);
     background-color: transparent;
     position: relative;
   }
