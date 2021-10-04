@@ -17,17 +17,26 @@
 //モバイルデザイン
 @media (max-width: 767px){
   html {
-    color: #fff;
+      height: 100%;
+      color: #fff;
     .fas {
       font-size: 30px;
       display: none;
     }
     body{
-      
+      &::before {
+        background: url(img/img1.jpg) no-repeat center;/* 擬似要素に背景画像 */
+        background-size: cover;/* cover指定 */
+        content: "";/* 画像を表示させる為に必要*/
+        display: block;/*ブロックボックスで表示*/
+        position: fixed;/* 擬似要素全体を固定 */
+        width: 100%;/* 横幅を画面全体 */
+        height: 100vh;/* 縦幅を画面全体 */
+        top: 0;/* 上からの配置を0 */
+        left: 0;/* 左からの配置を0 */
+        z-index: -1;/*背景画像になるように重ね順を-1*/
+      }
       header {
-        background-image: url(img/img1.jpg);
-        background-attachment: fixed;
-        background-size: cover;
         height: 99.9vh;
         position: relative;
         .headerText{
@@ -84,9 +93,6 @@
       }
   
       .section3 {
-        background-image: url(img/img1.jpg);
-        background-attachment: fixed;
-        background-size: cover;
         height: 99vh;
         position: relative;
         p{
@@ -135,9 +141,6 @@
       }
   
       .section5 {
-        background-image: url(img/img1.jpg);
-        background-attachment: fixed;
-        background-size: cover;
         height: 99vh;
         position: relative;
         .footerP{
@@ -230,7 +233,7 @@
     }
 
     header{
-      height: 100vh;
+      height: 99vh;
       
       position: relative;
       .headerText{
@@ -254,11 +257,11 @@
 
     .section2{
       position: relative;
-      height: 25vh;
+      height: 40vh;
       background-color: transparent;
       .contentsText{
         background-color: rgba(20,20,20,.6);
-        padding: 5px 5px;
+        font-size: calc(16px + 1vh);
         margin-left: 5%;
         width: 50%;
         display: flex;
@@ -274,7 +277,7 @@
         top: 0;
         width: 60%;
         overflow: hidden;
-        height: 25vh;
+        height: 40vh;
         img{
           position: absolute;
           top: 0;
@@ -287,7 +290,7 @@
     }
 
     .section3{
-      height: 100vh;
+      height: 99vh;
       position: relative;
       p{
         position: absolute;
@@ -301,12 +304,12 @@
 
     .section4{
       position: relative;
-      height: 25vh;
+      height: 40vh;
       background-color: transparent;
       .contentsText{
-        margin-right: 5%;
         background-color: rgba(20,20,20,.6);
-        padding: 5px 5px;
+        font-size: calc(16px + 1vh);
+        margin-right: 5%;
         width: 50%;
         display: flex;
         flex-direction: column;
@@ -322,7 +325,7 @@
         top: 0;
         width: 60%;
         overflow: hidden;
-        height: 25vh;
+        height: 40vh;
         img{
           position: absolute;
           top: 0;
@@ -335,10 +338,13 @@
     }
 
     .section5 {
-      height: 100vh;
+      height: 99vh;
       position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
       .footerP{
-        height: 58vh;
+        height: 30vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -356,7 +362,7 @@
         justify-content: space-evenly;
         .card{
           width: 30vw;
-          height: 20vh;
+          height: 30vh;
           position: relative;
           a{
             img{
@@ -372,9 +378,11 @@
               left: 50%;
               transform: translate(-50%);
               text-align: center;
-              font-size: 16px;
               background-color: rgba(255, 255, 255, .8);
               color: violet;
+              font-size: calc(16px + 1vh);
+              font-weight: bold;
+              line-height: 3.5vh;
             }
           }
         }
@@ -387,7 +395,7 @@
         justify-content: space-evenly;
         .card{
           width: 30vw;
-          height: 20vh;
+          height: 30vh;
           position: relative;
           a{
             img{
@@ -403,9 +411,11 @@
               left: 50%;
               transform: translate(-50%);
               text-align: center;
-              font-size: 16px;
               background-color: rgba(255, 255, 255, .8);
               color: violet;
+              font-size: calc(16px + 1vh);
+              font-weight: bold;
+              line-height: 3.5vh;
             }
           }
         }

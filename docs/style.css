@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .animationTarget, .scrollTarget {
   opacity: 0;
   -webkit-transform: translateY(20px);
@@ -20,16 +21,36 @@
 
 @media (max-width: 767px) {
   html {
+    height: 100%;
     color: #fff;
   }
   html .fas {
     font-size: 30px;
     display: none;
   }
-  html body header {
-    background-image: url(img/img1.jpg);
-    background-attachment: fixed;
+  html body::before {
+    background: url(img/img1.jpg) no-repeat center;
+    /* 擬似要素に背景画像 */
     background-size: cover;
+    /* cover指定 */
+    content: "";
+    /* 画像を表示させる為に必要*/
+    display: block;
+    /*ブロックボックスで表示*/
+    position: fixed;
+    /* 擬似要素全体を固定 */
+    width: 100%;
+    /* 横幅を画面全体 */
+    height: 100vh;
+    /* 縦幅を画面全体 */
+    top: 0;
+    /* 上からの配置を0 */
+    left: 0;
+    /* 左からの配置を0 */
+    z-index: -1;
+    /*背景画像になるように重ね順を-1*/
+  }
+  html body header {
     height: 99.9vh;
     position: relative;
   }
@@ -94,9 +115,6 @@
        object-fit: cover;
   }
   html body .section3 {
-    background-image: url(img/img1.jpg);
-    background-attachment: fixed;
-    background-size: cover;
     height: 99vh;
     position: relative;
   }
@@ -153,9 +171,6 @@
        object-fit: cover;
   }
   html body .section5 {
-    background-image: url(img/img1.jpg);
-    background-attachment: fixed;
-    background-size: cover;
     height: 99vh;
     position: relative;
   }
@@ -266,7 +281,7 @@
     display: none;
   }
   html header {
-    height: 100vh;
+    height: 99vh;
     position: relative;
   }
   html header .headerText {
@@ -289,12 +304,12 @@
   }
   html .section2 {
     position: relative;
-    height: 25vh;
+    height: 40vh;
     background-color: transparent;
   }
   html .section2 .contentsText {
     background-color: rgba(20, 20, 20, 0.6);
-    padding: 5px 5px;
+    font-size: calc(16px + 1vh);
     margin-left: 5%;
     width: 50%;
     display: -webkit-box;
@@ -318,7 +333,7 @@
     top: 0;
     width: 60%;
     overflow: hidden;
-    height: 25vh;
+    height: 40vh;
   }
   html .section2 .image img {
     position: absolute;
@@ -330,7 +345,7 @@
        object-fit: cover;
   }
   html .section3 {
-    height: 100vh;
+    height: 99vh;
     position: relative;
   }
   html .section3 p {
@@ -344,13 +359,13 @@
   }
   html .section4 {
     position: relative;
-    height: 25vh;
+    height: 40vh;
     background-color: transparent;
   }
   html .section4 .contentsText {
-    margin-right: 5%;
     background-color: rgba(20, 20, 20, 0.6);
-    padding: 5px 5px;
+    font-size: calc(16px + 1vh);
+    margin-right: 5%;
     width: 50%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -374,7 +389,7 @@
     top: 0;
     width: 60%;
     overflow: hidden;
-    height: 25vh;
+    height: 40vh;
   }
   html .section4 .image img {
     position: absolute;
@@ -386,11 +401,21 @@
        object-fit: cover;
   }
   html .section5 {
-    height: 100vh;
+    height: 99vh;
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
   html .section5 .footerP {
-    height: 58vh;
+    height: 30vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -423,7 +448,7 @@
   }
   html .section5 .footerLeftImages .card {
     width: 30vw;
-    height: 20vh;
+    height: 30vh;
     position: relative;
   }
   html .section5 .footerLeftImages .card a img {
@@ -441,9 +466,11 @@
     -webkit-transform: translate(-50%);
             transform: translate(-50%);
     text-align: center;
-    font-size: 16px;
     background-color: rgba(255, 255, 255, 0.8);
     color: violet;
+    font-size: calc(16px + 1vh);
+    font-weight: bold;
+    line-height: 3.5vh;
   }
   html .section5 .footerRightImages {
     margin-bottom: 1vh;
@@ -460,7 +487,7 @@
   }
   html .section5 .footerRightImages .card {
     width: 30vw;
-    height: 20vh;
+    height: 30vh;
     position: relative;
   }
   html .section5 .footerRightImages .card a img {
@@ -478,9 +505,11 @@
     -webkit-transform: translate(-50%);
             transform: translate(-50%);
     text-align: center;
-    font-size: 16px;
     background-color: rgba(255, 255, 255, 0.8);
     color: violet;
+    font-size: calc(16px + 1vh);
+    font-weight: bold;
+    line-height: 3.5vh;
   }
 }
 
