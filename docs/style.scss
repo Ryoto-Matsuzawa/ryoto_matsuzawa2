@@ -23,12 +23,12 @@
       display: none;
     }
     body{
-      background-image: url(img/img1.jpg);
-      background-attachment: fixed;
-      background-size: cover;
+      
       header {
+        background-image: url(img/img1.jpg);
+        background-attachment: fixed;
+        background-size: cover;
         height: 99.9vh;
-        background-color: transparent;
         position: relative;
         .headerText{
           position: absolute;
@@ -84,7 +84,10 @@
       }
   
       .section3 {
-        height: 100vh;
+        background-image: url(img/img1.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        height: 99vh;
         position: relative;
         p{
           position: absolute;
@@ -132,7 +135,10 @@
       }
   
       .section5 {
-        height: 100vh;
+        background-image: url(img/img1.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        height: 99vh;
         position: relative;
         .footerP{
           height: 58vh;
@@ -146,7 +152,7 @@
         }
   
         .footerLeftImages{
-          margin-top: 1vh;
+          padding-top: 1vh;
           display: flex;
           align-items: center;
           position: relative;

@@ -26,14 +26,11 @@
     font-size: 30px;
     display: none;
   }
-  html body {
+  html body header {
     background-image: url(img/img1.jpg);
     background-attachment: fixed;
     background-size: cover;
-  }
-  html body header {
     height: 99.9vh;
-    background-color: transparent;
     position: relative;
   }
   html body header .headerText {
@@ -97,7 +94,10 @@
        object-fit: cover;
   }
   html body .section3 {
-    height: 100vh;
+    background-image: url(img/img1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 99vh;
     position: relative;
   }
   html body .section3 p {
@@ -153,7 +153,10 @@
        object-fit: cover;
   }
   html body .section5 {
-    height: 100vh;
+    background-image: url(img/img1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 99vh;
     position: relative;
   }
   html body .section5 .footerP {
@@ -176,7 +179,7 @@
     line-height: 4;
   }
   html body .section5 .footerLeftImages {
-    margin-top: 1vh;
+    padding-top: 1vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
