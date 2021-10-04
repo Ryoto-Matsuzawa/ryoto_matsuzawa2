@@ -27,7 +27,7 @@
       background-attachment: fixed;
       background-size: cover;
       header {
-        height: clamp(100vh, 100%);
+        height: 99.9vh;
         background-color: transparent;
         position: relative;
         .headerText{
