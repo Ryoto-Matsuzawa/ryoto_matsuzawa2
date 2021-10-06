@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../reset.min.css">
+  <link rel="stylesheet" href="../style.css">
+  <script src="../jquery-3.6.0.min.js"defer></script>
+  <script src="../script.js" defer></script>
+  <title>Document</title>
+</head>
+<body>
+  <div class="chooseBox">
+    <!-- 最初の選択肢 -->
+    <div id="q_01" class="fit">
+      <p>ショートカット派？<br>ロングヘアー派？</p>
+      <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_02">ショートカット</a></li>
+        <li class="odd"><a class="btn" href="#q_06">ロングヘアー</a></li>
+        <li class="odd"><a class="btn" href="../index.html">TOPページに戻る</a></li>
+
+      </ul>
+    </div>
+
+    <!-- 次の選択肢 -->
+    <div id="q_02" style="display: none;">
+      <p>元気ハツラツな娘が好き？</p>
+      <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_11">YES</a></li>
+        <li class="odd"><a class="btn" href="#q_03">NO</a></li>
+      </ul>
+    </div>
+
+    <!-- 次の選択肢 -->
+    <div id="q_03" style="display: none;">
+      <p>のんびりマイペースな娘が好き？</p>
+      <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_12">YES</a></li>
+        <li class="odd"><a class="btn" href="#q_04">NO</a></li>
+      </ul>
+    </div>
+
+    <!-- 次の選択肢 -->
+    <div id="q_04" style="display: none;">
+      <p>ミステリアスなヴァンパイアが好き？</p>
+      <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_13">YES</a></li>
+        <li class="odd"><a class="btn" href="#q_05">NO</a></li>
+      </ul>
+    </div>
+
+    <!-- 次の選択肢 -->
+    <div id="q_05" style="display: none;">
+      <p>ビシッと清楚なアイドルが好き？</p>
+      <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_14">YES</a></li>
+        <li class="odd"><a class="btn" href="#q_15">NO</a></li>
+      </ul>
+    </div>
+
+    <!-- 次の選択肢 -->
+    <div id="q_06" style="display: none;">
+      <p>キラキラ輝く清純派アイドルが好き？</p>
+      <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_16">YES</a></li>
+        <li class="odd"><a class="btn" href="#q_07">NO</a></li>
+      </ul>
+    </div>
+
+    <!-- 次の選択肢 -->
+    <div id="q_07" style="display: none;">
+      <p>いたずら好きな妹アイドルが好き？</p>
+      <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_17">YES</a></li>
+        <li class="odd"><a class="btn" href="#q_08">NO</a></li>
+      </ul>
+    </div>
+
+    <!-- 次の選択肢 -->
+    <div id="q_08" style="display: none;">
+      <p>しっかり者のお姉さんアイドルが好き？</p>
+      <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_18">YES</a></li>
+        <li class="odd"><a class="btn" href="#q_09">NO</a></li>
+      </ul>
+    </div>
+
+    <!-- 次の選択肢 -->
+    <div id="q_09" style="display: none;">
+      <p>ポンコツだけど誰よりも努力家アイドルが好き？</p>
+      <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_19">YES</a></li>
+        <li class="odd"><a class="btn" href="#q_20">NO</a></li>
+      </ul>
+    </div>
+
+    <!-- 選択肢の答え① -->
+    <div id="q_11" class="appdiv" style="display: none;">
+      <p class="ansP">あなたにおすすめなのは…</p>
+      <div class="appImg">
+        <img src="../img/subaru1.png" alt="">
+      </div>
+      <h4><a href="https://hololive.hololivepro.com/talents/oozora-subaru/">『大空スバル』<br>です！！</a></h4>
+      <span class="ansSpan"><a class="btn ansA" href="#q_01">もどる</a></span>
+    </div>
+
+    <!-- 選択肢の答え② -->
+    <div id="q_12" class="appdiv" style="display: none;">
+      <p class="ansP">あなたにおすすめなのは…</p>
+      <div class="appImg">
+        <img src="../img/okayu3.png" alt="">
+      </div>
+      <h4><a href="https://hololive.hololivepro.com/talents/nekomata-okayu/">『猫又おかゆ』<br>です！！</a></h4>
+      <span class="ansSpan"><a class="btn ansA" href="#q_01">もどる</a></span>
+    </div>
+
+    <div id="q_13" class="appdiv" style="display: none;">
+      <p class="ansP">あなたにおすすめなのは…</p>
+      <div class="appImg">
+        <img src="../img/mel1.png" alt="">
+      </div>
+      <h4><a href="https://hololive.hololivepro.com/talents/yozora-mel/">『夜空メル』<br>です！！</a></h4>
+      <span class="ansSpan"><a class="btn ansA" href="#q_01">もどる</a></span>
+    </div>
+    <!-- 選択肢の答え② -->
+    <div id="q_14" class="appdiv" style="display: none;">
+      <p class="ansP">あなたにおすすめなのは…</p>
+      <div class="appImg">
+        <img src="../img/azki1.png" alt="">
+      </div>
+      <h4><a href="https://hololive.hololivepro.com/talents/azki/">『AZKi』<br>です！！</a></h4>
+      <span class="ansSpan"><a class="btn ansA" href="#q_01">もどる</a></span>
+    </div>
+
+    <div id="q_15" class="appdiv" style="display: none;">
+      <p class="ansP">大きな胸に包まれたいあなたにおすすめなのは…</p>
+      <div class="appImg">
+        <img src="../img/noel1.png" alt="">
+      </div>
+      <h4><a href="https://hololive.hololivepro.com/talents/shirogane-noel/">『白銀ノエル』<br>です！！</a></h4>
+      <span class="ansSpan"><a class="btn ansA" href="#q_01">もどる</a></span>
+    </div>
+    <!-- 選択肢の答え② -->
+    <div id="q_16" class="appdiv" style="display: none;">
+      <p class="ansP">あなたにおすすめなのは…</p>
+      <div class="appImg">
+        <img src="../img/sora1.png" alt="">
+      </div>
+      <h4><a href="https://hololive.hololivepro.com/talents/tokino-sora/">『ときのそら』<br>です！！</a></h4>
+      <span class="ansSpan"><a class="btn ansA" href="#q_01">もどる</a></span>
+    </div>
+
+    <div id="q_17" class="appdiv" style="display: none;">
+      <p class="ansP">あなたにおすすめなのは…</p>
+      <div class="appImg">
+        <img src="../img/ayame1.png" alt="">
+      </div>
+      <h4><a href="https://hololive.hololivepro.com/talents/nakiri-ayame/">『百鬼あやめ』<br>です！！</a></h4>
+      <span class="ansSpan"><a class="btn ansA" href="#q_01">もどる</a></span>
+    </div>
+    <!-- 選択肢の答え② -->
+    <div id="q_18" class="appdiv" style="display: none;">
+      <p class="ansP">あなたにおすすめなのは…</p>
+      <div class="appImg">
+        <img src="../img/mio1.png" alt="">
+      </div>
+      <h4><a href="https://hololive.hololivepro.com/talents/ookami-mio/">『大神ミオ』<br>です！！</a></h4>
+      <span class="ansSpan"><a class="btn ansA" href="#q_01">もどる</a></span>
+    </div>
+
+    <div id="q_19" class="appdiv" style="display: none;">
+      <p class="ansP">あなたにおすすめなのは…</p>
+      <div class="appImg">
+        <img src="../img/nene1.png" alt="">
+      </div>
+      <h4><a href="https://hololive.hololivepro.com/talents/momosuzu-nene/">『桃鈴ねね』<br>です！！</a></h4>
+      <span class="ansSpan"><a class="btn ansA" href="#q_01">もどる</a></span>
+    </div>
+    <!-- 選択肢の答え② -->
+    <div id="q_20" class="appdiv" style="display: none;">
+      <p class="ansP">保健室の先生からいろんな事をされたいあなたにおすすめなのは…</p>
+      <div class="appImg">
+        <img src="../img/choco1.png" alt="">
+      </div>
+      <h4><a href="https://hololive.hololivepro.com/talents/yuzuki-choco/">『癒月ちょこ』<br>です！！</a></h4>
+      <span class="ansSpan"><a class="btn ansA" href="#q_01">もどる</a></span>
+    </div>
+  </div>
+</body>
+</html>

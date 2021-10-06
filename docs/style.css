@@ -189,8 +189,13 @@
         -ms-flex-direction: column;
             flex-direction: column;
     font-weight: bold;
-    font-size: calc(16px + 1vh);
+    font-size: calc(16px + .5vh);
     line-height: 4;
+  }
+  html body .section5 .footerP a {
+    text-decoration: none;
+    color: #3EA6FF;
+    border-bottom: 1px solid #3EA6FF;
   }
   html body .section5 .footerLeftImages {
     padding-top: 1vh;
@@ -266,24 +271,150 @@
     background-color: rgba(255, 255, 255, 0.8);
     color: violet;
   }
+  .chooseBox {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+  }
+  .chooseBox .fit {
+    position: absolute;
+    left: 0px;
+    top: 20px;
+    width: 100%;
+  }
+  .chooseBox .appdiv {
+    position: relative;
+  }
+  .chooseBox .appImg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .chooseBox .appImg img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 80vh;
+  }
+  .chooseBox p {
+    padding: 10vh 10vw;
+    border-radius: 5px;
+    font-size: 24px;
+    display: block;
+    font-weight: bold;
+    text-align: center;
+  }
+  .chooseBox .ansP {
+    padding: 0 10vw 5vh 10vw;
+    border-radius: 5px;
+    font-size: 24px;
+    display: block;
+    font-weight: bold;
+    text-align: center;
+  }
+  .chooseBox h4 {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    background-color: rgba(192, 0, 3, 0.6);
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+  }
+  .chooseBox ul {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .chooseBox ul li {
+    width: 80vw;
+    margin: 20px 0;
+    list-style: none;
+  }
+  .chooseBox ul li:nth-child(2n) {
+    margin-right: 0;
+  }
+  .chooseBox ul li a {
+    color: #fff;
+    display: block;
+    padding: 20px 60px;
+    text-align: center;
+    background-color: #2791d4;
+    font-weight: 600;
+    font-size: 18px;
+    border: 2px solid #2791d4;
+    text-decoration: none;
+  }
+  .chooseBox ul li a:hover {
+    background-color: #fff;
+    color: #2791d4;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+  }
+  .chooseBox .ansSpan {
+    display: block;
+    width: 100%;
+  }
+  .chooseBox .ansA, .chooseBox a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 995px) {
   html {
-    background-image: url(img/img1.jpg);
-    background-attachment: fixed;
-    background-size: cover;
     color: #fff;
   }
   html .fas {
     font-size: 30px;
     display: none;
   }
-  html header {
+  html body::before {
+    background: url(img/img1.jpg) no-repeat center;
+    /* 擬似要素に背景画像 */
+    background-size: cover;
+    /* cover指定 */
+    content: "";
+    /* 画像を表示させる為に必要*/
+    display: block;
+    /*ブロックボックスで表示*/
+    position: fixed;
+    /* 擬似要素全体を固定 */
+    width: 100%;
+    /* 横幅を画面全体 */
+    height: 100vh;
+    /* 縦幅を画面全体 */
+    top: 0;
+    /* 上からの配置を0 */
+    left: 0;
+    /* 左からの配置を0 */
+    z-index: -1;
+    /*背景画像になるように重ね順を-1*/
+  }
+  html body header {
     height: 99vh;
     position: relative;
   }
-  html header .headerText {
+  html body header .headerText {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -293,20 +424,20 @@
     font-size: calc(16px + 2vh);
     line-height: 2;
   }
-  html header .headerText .headerPtop {
+  html body header .headerText .headerPtop {
     white-space: nowrap;
     margin-left: -30%;
   }
-  html header .headerText .headerPBottom {
+  html body header .headerText .headerPBottom {
     white-space: nowrap;
     margin-left: 30%;
   }
-  html .section2 {
+  html body .section2 {
     position: relative;
     height: 40vh;
     background-color: transparent;
   }
-  html .section2 .contentsText {
+  html body .section2 .contentsText {
     background-color: rgba(20, 20, 20, 0.6);
     font-size: calc(16px + 1vh);
     margin-left: 5%;
@@ -326,7 +457,7 @@
     -webkit-transform: translate(0%, -50%);
             transform: translate(0%, -50%);
   }
-  html .section2 .image {
+  html body .section2 .image {
     right: 0;
     position: absolute;
     top: 0;
@@ -334,7 +465,7 @@
     overflow: hidden;
     height: 40vh;
   }
-  html .section2 .image img {
+  html body .section2 .image img {
     position: absolute;
     top: 0;
     left: 0;
@@ -343,11 +474,11 @@
     -o-object-fit: cover;
        object-fit: cover;
   }
-  html .section3 {
+  html body .section3 {
     height: 99vh;
     position: relative;
   }
-  html .section3 p {
+  html body .section3 p {
     position: absolute;
     font-size: calc(16px + 1vh);
     top: 50%;
@@ -356,12 +487,12 @@
             transform: translate(-50%, -50%);
     white-space: nowrap;
   }
-  html .section4 {
+  html body .section4 {
     position: relative;
     height: 40vh;
     background-color: transparent;
   }
-  html .section4 .contentsText {
+  html body .section4 .contentsText {
     background-color: rgba(20, 20, 20, 0.6);
     font-size: calc(16px + 1vh);
     margin-right: 5%;
@@ -382,7 +513,7 @@
     -webkit-transform: translate(0%, -50%);
             transform: translate(0%, -50%);
   }
-  html .section4 .image {
+  html body .section4 .image {
     left: 0;
     position: absolute;
     top: 0;
@@ -390,7 +521,7 @@
     overflow: hidden;
     height: 40vh;
   }
-  html .section4 .image img {
+  html body .section4 .image img {
     position: absolute;
     top: 0;
     left: 0;
@@ -399,7 +530,7 @@
     -o-object-fit: cover;
        object-fit: cover;
   }
-  html .section5 {
+  html body .section5 {
     height: 99vh;
     position: relative;
     display: -webkit-box;
@@ -413,7 +544,7 @@
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
-  html .section5 .footerP {
+  html body .section5 .footerP {
     height: 30vh;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -432,7 +563,12 @@
     font-size: calc(16px + 1vh);
     line-height: 4;
   }
-  html .section5 .footerLeftImages {
+  html body .section5 .footerP a {
+    text-decoration: none;
+    color: #3EA6FF;
+    border-bottom: 1px solid #3EA6FF;
+  }
+  html body .section5 .footerLeftImages {
     margin-top: 1vh;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -445,18 +581,18 @@
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
-  html .section5 .footerLeftImages .card {
+  html body .section5 .footerLeftImages .card {
     width: 30vw;
     height: 30vh;
     position: relative;
   }
-  html .section5 .footerLeftImages .card a img {
+  html body .section5 .footerLeftImages .card a img {
     -o-object-fit: cover;
        object-fit: cover;
     width: 100%;
     height: 100%;
   }
-  html .section5 .footerLeftImages .card a p {
+  html body .section5 .footerLeftImages .card a p {
     width: 100%;
     position: absolute;
     z-index: 100;
@@ -471,7 +607,7 @@
     font-weight: bold;
     line-height: 3.5vh;
   }
-  html .section5 .footerRightImages {
+  html body .section5 .footerRightImages {
     margin-bottom: 1vh;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -484,18 +620,18 @@
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
-  html .section5 .footerRightImages .card {
+  html body .section5 .footerRightImages .card {
     width: 30vw;
     height: 30vh;
     position: relative;
   }
-  html .section5 .footerRightImages .card a img {
+  html body .section5 .footerRightImages .card a img {
     -o-object-fit: cover;
        object-fit: cover;
     width: 100%;
     height: 100%;
   }
-  html .section5 .footerRightImages .card a p {
+  html body .section5 .footerRightImages .card a p {
     width: 100%;
     position: absolute;
     z-index: 100;
@@ -509,25 +645,151 @@
     font-size: calc(16px + 1vh);
     font-weight: bold;
     line-height: 3.5vh;
+  }
+  .chooseBox {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+  }
+  .chooseBox .fit {
+    position: absolute;
+    left: 0px;
+    top: 20px;
+    width: 100%;
+  }
+  .chooseBox .appdiv {
+    position: relative;
+  }
+  .chooseBox .appImg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .chooseBox .appImg img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 80vh;
+  }
+  .chooseBox p {
+    padding: 10vh 10vw;
+    border-radius: 5px;
+    font-size: 24px;
+    display: block;
+    font-weight: bold;
+    text-align: center;
+  }
+  .chooseBox .ansP {
+    padding: 0 10vw 5vh 10vw;
+    border-radius: 5px;
+    font-size: 24px;
+    display: block;
+    font-weight: bold;
+    text-align: center;
+  }
+  .chooseBox h4 {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    background-color: rgba(192, 0, 3, 0.6);
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+  }
+  .chooseBox ul {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .chooseBox ul li {
+    width: 80vw;
+    margin: 20px 0;
+    list-style: none;
+  }
+  .chooseBox ul li:nth-child(2n) {
+    margin-right: 0;
+  }
+  .chooseBox ul li a {
+    color: #fff;
+    display: block;
+    padding: 20px 60px;
+    text-align: center;
+    background-color: #2791d4;
+    font-weight: 600;
+    font-size: 18px;
+    border: 2px solid #2791d4;
+    text-decoration: none;
+  }
+  .chooseBox ul li a:hover {
+    background-color: #fff;
+    color: #2791d4;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+  }
+  .chooseBox .ansSpan {
+    display: block;
+    width: 100%;
+  }
+  .chooseBox .ansA, .chooseBox a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
   }
 }
 
 @media (min-width: 996px) {
   html {
-    background-image: url(img/img1.jpg);
-    background-attachment: fixed;
-    background-size: cover;
     color: #fff;
   }
   html .fas {
     font-size: 30px;
     display: none;
   }
-  html header {
+  html body::before {
+    background: url(img/img1.jpg) no-repeat center;
+    /* 擬似要素に背景画像 */
+    background-size: cover;
+    /* cover指定 */
+    content: "";
+    /* 画像を表示させる為に必要*/
+    display: block;
+    /*ブロックボックスで表示*/
+    position: fixed;
+    /* 擬似要素全体を固定 */
+    width: 100%;
+    /* 横幅を画面全体 */
+    height: 100vh;
+    /* 縦幅を画面全体 */
+    top: 0;
+    /* 上からの配置を0 */
+    left: 0;
+    /* 左からの配置を0 */
+    z-index: -1;
+    /*背景画像になるように重ね順を-1*/
+  }
+  html body header {
     height: 100vh;
     position: relative;
   }
-  html header .headerText {
+  html body header .headerText {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -537,20 +799,20 @@
     font-size: calc(16px + 2vh);
     line-height: 2;
   }
-  html header .headerText .headerPtop {
+  html body header .headerText .headerPtop {
     white-space: nowrap;
     margin-left: -30%;
   }
-  html header .headerText .headerPBottom {
+  html body header .headerText .headerPBottom {
     white-space: nowrap;
     margin-left: 30%;
   }
-  html .section2 {
+  html body .section2 {
     position: relative;
-    height: 25vh;
+    height: 70vh;
     background-color: transparent;
   }
-  html .section2 .contentsText {
+  html body .section2 .contentsText {
     background-color: rgba(20, 20, 20, 0.6);
     padding: 5px 5px;
     margin-left: 5%;
@@ -570,15 +832,15 @@
     -webkit-transform: translate(0%, -50%);
             transform: translate(0%, -50%);
   }
-  html .section2 .image {
+  html body .section2 .image {
     right: 0;
     position: absolute;
     top: 0;
     width: 60%;
     overflow: hidden;
-    height: 25vh;
+    height: 70vh;
   }
-  html .section2 .image img {
+  html body .section2 .image img {
     position: absolute;
     top: 0;
     left: 0;
@@ -587,11 +849,11 @@
     -o-object-fit: cover;
        object-fit: cover;
   }
-  html .section3 {
+  html body .section3 {
     height: 100vh;
     position: relative;
   }
-  html .section3 p {
+  html body .section3 p {
     position: absolute;
     font-size: calc(16px + 1vh);
     top: 50%;
@@ -600,12 +862,12 @@
             transform: translate(-50%, -50%);
     white-space: nowrap;
   }
-  html .section4 {
+  html body .section4 {
     position: relative;
-    height: 25vh;
+    height: 70vh;
     background-color: transparent;
   }
-  html .section4 .contentsText {
+  html body .section4 .contentsText {
     margin-right: 5%;
     background-color: rgba(20, 20, 20, 0.6);
     padding: 5px 5px;
@@ -626,15 +888,15 @@
     -webkit-transform: translate(0%, -50%);
             transform: translate(0%, -50%);
   }
-  html .section4 .image {
+  html body .section4 .image {
     left: 0;
     position: absolute;
     top: 0;
     width: 60%;
     overflow: hidden;
-    height: 25vh;
+    height: 70vh;
   }
-  html .section4 .image img {
+  html body .section4 .image img {
     position: absolute;
     top: 0;
     left: 0;
@@ -643,12 +905,17 @@
     -o-object-fit: cover;
        object-fit: cover;
   }
-  html .section5 {
+  html body .section5 {
     height: 100vh;
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
-  html .section5 .footerP {
-    height: 58vh;
+  html body .section5 .footerP {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -666,7 +933,12 @@
     font-size: calc(16px + 1vh);
     line-height: 4;
   }
-  html .section5 .footerLeftImages {
+  html body .section5 .footerP a {
+    text-decoration: none;
+    color: #3EA6FF;
+    border-bottom: 1px solid #3EA6FF;
+  }
+  html body .section5 .footerLeftImages {
     margin-top: 1vh;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -679,18 +951,18 @@
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
-  html .section5 .footerLeftImages .card {
-    width: 30vw;
-    height: 20vh;
+  html body .section5 .footerLeftImages .card {
+    width: 10vw;
+    height: 50vh;
     position: relative;
   }
-  html .section5 .footerLeftImages .card a img {
+  html body .section5 .footerLeftImages .card a img {
     -o-object-fit: cover;
        object-fit: cover;
     width: 100%;
     height: 100%;
   }
-  html .section5 .footerLeftImages .card a p {
+  html body .section5 .footerLeftImages .card a p {
     width: 100%;
     position: absolute;
     z-index: 100;
@@ -703,7 +975,7 @@
     background-color: rgba(255, 255, 255, 0.8);
     color: violet;
   }
-  html .section5 .footerRightImages {
+  html body .section5 .footerRightImages {
     margin-bottom: 1vh;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -716,18 +988,18 @@
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
-  html .section5 .footerRightImages .card {
-    width: 30vw;
-    height: 20vh;
+  html body .section5 .footerRightImages .card {
+    width: 10vw;
+    height: 50vh;
     position: relative;
   }
-  html .section5 .footerRightImages .card a img {
+  html body .section5 .footerRightImages .card a img {
     -o-object-fit: cover;
        object-fit: cover;
     width: 100%;
     height: 100%;
   }
-  html .section5 .footerRightImages .card a p {
+  html body .section5 .footerRightImages .card a p {
     width: 100%;
     position: absolute;
     z-index: 100;
@@ -739,6 +1011,109 @@
     font-size: 16px;
     background-color: rgba(255, 255, 255, 0.8);
     color: violet;
+  }
+  .chooseBox {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+  }
+  .chooseBox .fit {
+    position: absolute;
+    left: 0px;
+    top: 20px;
+    width: 100%;
+  }
+  .chooseBox .appdiv {
+    position: relative;
+  }
+  .chooseBox .appImg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .chooseBox .appImg img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 80vh;
+  }
+  .chooseBox p {
+    padding: 10vh 10vw;
+    border-radius: 5px;
+    font-size: 24px;
+    display: block;
+    font-weight: bold;
+    text-align: center;
+  }
+  .chooseBox .ansP {
+    padding: 0 10vw 5vh 10vw;
+    border-radius: 5px;
+    font-size: 24px;
+    display: block;
+    font-weight: bold;
+    text-align: center;
+  }
+  .chooseBox h4 {
+    width: 40%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    background-color: rgba(192, 0, 3, 0.6);
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+  }
+  .chooseBox ul {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .chooseBox ul li {
+    width: 40vw;
+    margin: 20px auto;
+    list-style: none;
+  }
+  .chooseBox ul li a {
+    color: #fff;
+    display: block;
+    padding: 20px 60px;
+    background-color: #2791d4;
+    font-weight: 600;
+    font-size: 18px;
+    border: 2px solid #2791d4;
+    text-decoration: none;
+  }
+  .chooseBox ul li a:hover {
+    background-color: #fff;
+    color: #2791d4;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+  }
+  .chooseBox .ansSpan {
+    display: block;
+    width: 100%;
+  }
+  .chooseBox .ansA, .chooseBox a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
   }
 }
 /*# sourceMappingURL=style.css.map */
