@@ -218,6 +218,8 @@
   html body .section5 .footerLeftImages .card a img {
     -o-object-fit: cover;
        object-fit: cover;
+    -o-object-position: 100% 0%;
+       object-position: 100% 0%;
     width: 100%;
     height: 100%;
   }
@@ -255,6 +257,8 @@
   html body .section5 .footerRightImages .card a img {
     -o-object-fit: cover;
        object-fit: cover;
+    -o-object-position: 100% 0%;
+       object-position: 100% 0%;
     width: 100%;
     height: 100%;
   }
@@ -589,6 +593,8 @@
   html body .section5 .footerLeftImages .card a img {
     -o-object-fit: cover;
        object-fit: cover;
+    -o-object-position: 100% 0%;
+       object-position: 100% 0%;
     width: 100%;
     height: 100%;
   }
@@ -628,6 +634,8 @@
   html body .section5 .footerRightImages .card a img {
     -o-object-fit: cover;
        object-fit: cover;
+    -o-object-position: 100% 0%;
+       object-position: 100% 0%;
     width: 100%;
     height: 100%;
   }
